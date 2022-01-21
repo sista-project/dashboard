@@ -17,12 +17,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
-  <style>
-    .tab {
-      display: inline-block;
-      margin-left: 40px;
-    }
-  </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -142,79 +136,147 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Content Header (Page header) -->
       <div class="content-header">
         <div class="container-fluid">
-          <div class="row mb-2 ml-4">
+          <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">Daftar Peserta Seminar</h1>
+              <h1 class="m-0">Form Seminar/Sidang Mahasiswa</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Seminar</a></li>
-                <li class="breadcrumb-item active">Peserta Seminar</li>
-              </ol>  
+                <li class="breadcrumb-item active">Form Seminar</li>
+              </ol>
             </div><!-- /.col -->
-            <div class="container-fluid" style="margin-top: 20px;">
-              <p>Seminar Mahasiswa : Aziz Nurcholis (0110221089) - Teknik Informatika <br>Judul : Monitoring Jaringan Dengan Opnserver <br>Waktu Seminar : Senin, 4 Januari 2022, Jam : 10.00 WIB</p>
-            </div>
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </div>
       <!-- /.content-header -->
 
       <!-- Main content -->
-      <div class="content mr-5 ml-5">
-        <table class="table table-striped">
-          <tr>
-            <th>NO</th>
-            <th>NIM</th>
-            <th>Mahasiswa/i</th>
-            <th>Prodi</th>
-            <th>Waktu</th>
-            <th>Status</th>
-            <th>Action</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>0110221039</td>
-            <td>Arif Fadillah</td>
-            <td>Teknik Informatika</td>
-            <td>S1</td>
-            <td>Diterima</td>
-            <td><a href="">Edit</a><b> | </b><a href="">Delete</a></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>0110221067</td>
-            <td>Muhammad Fikri</td>
-            <td>Teknik Informatika</td>
-            <td>S1</td>
-            <td>Diterima</td>
-            <td><a href="">Edit</a><b> | </b><a href="">Delete</a></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>0110221056</td>
-            <td>Fatimah Aznur</td>
-            <td>Teknik Informatika</td>
-            <td>S1</td>
-            <td>Diterima</td>
-            <td><a href="">Edit</a><b> | </b><a href="">Delete</a></td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>0110221077</td>
-            <td>Piscki</td>
-            <td>Teknik Informatika</td>
-            <td>S1</td>
-            <td>Diterima</td>
-            <td><a href="">Edit</a><b> | </b><a href="">Delete</a></td>
-          </tr>
-        </table>
-        <div class="daftar">
-          <a class="btn btn-primary" href="#" role="button">Tambah Peserta Seminar</a>
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <button type="6utton" class="btn btn-primary mb-5">Tambah Seminar Baru</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <form>
+                <div class="form-group row">
+                  <label for="text" class="col-2 col-form-label">NIM :</label>
+                  <div class="col-10">
+                    <input id="text" name="text" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text1" class="col-2 col-form-label"> Nama :</label>
+                  <div class="col-10">
+                    <input id="text1" name="text1" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select" class="col-2 col-form-label">Prodi :</label>
+                  <div class="col-10">
+                    <select id="select" name="select" class="custom-select">
+                      <option value="">Sistem Informasi</option>
+                      <option value="">Teknik Informatika</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="text2" class="col-2 col-form-label">Tgl Seminar :</label>
+                  <div class="col-10">
+                    <div class="input-group">
+                      <input id="text2" name="text2" placeholder="dd/mm/yyyy" type="text" class="form-control">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <i class="fa fa-calendar"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text3" class="col-2 col-form-label">Jam Seminar :</label>
+                  <div class="col-10">
+                    <div class="input-group">
+                      <input id="text3" name="text3" type="text" class="form-control">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <i class="fa fa-clock"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="text4" class="col-2 col-form-label">Ruangan :</label>
+                  <div class="col-10">
+                    <input id="text4" name="text4" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="offset-2 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary">Update</button>
+                    <button name="submit" type="submit" class="btn btn-danger">Hapus</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-6">
+              <form>
+                <div class="form-group row">
+                  <label for="textarea" class="col-2 col-form-label">Judul TA :</label>
+                  <div class="col-10">
+                    <textarea id="textarea" name="textarea" cols="40" rows="3" class="form-control"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select" class="col-2 col-form-label">Seminar :</label>
+                  <div class="col-10">
+                    <select id="select" name="select" class="custom-select">
+                      <option value="">Proposal</option>
+                      <option value="">Seminar Hasil</option>
+                      <option value="">Seminar Akhir</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select1" class="col-2 col-form-label">Pembimbing :</label>
+                  <div class="col-10">
+                    <select id="select1" name="select1" class="custom-select">
+                      <option value="">Sirojul Munir S.SI, M. Kom.</option>
+                      <option value="">Amalia , SE., M. Ak.</option>
+                      <option value="">Drs. Rusmanto, M.M</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select2" class="col-2 col-form-label">Penguji 1 :</label>
+                  <div class="col-10">
+                    <select id="select2" name="select2" class="custom-select">
+                      <option value="">Edi Wibowo, SE., M.M.</option>
+                      <option value="">Salman Elfarisi S.Kom., M.Kom.</option>
+                      <option value="">Aditya Putra, S.T., M.T.</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="select3" class="col-2 col-form-label">Penguji 2 :</label>
+                  <div class="col-10">
+                    <select id="select3" name="select3" class="custom-select">
+                      <option value="rabbit">Ahmad Rio Adriansyah, S.Si., M.SI.</option>
+                      <option value="duck">Hendra Aditiyawijaya, S.Kom.</option>
+                      <option value="fish">Henry Saptono, S.Si., M.Kom.</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- /.content -->
-    </div>
       <!-- /.col-md-6 -->
     </div>
     <!-- /.row -->
